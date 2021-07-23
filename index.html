@@ -1,0 +1,28 @@
+<!-- <script src="https://unpkg.com/css-doodle@0.17.3/css-doodle.min.js"></script>
+<css-doodle>
+  :doodle {
+    @grid: 18 / 100vmax;
+    background: #0a0c27;
+  }
+  --hue: calc(180 + 1.5 * @row * @col);
+  background: hsl(var(--hue), 50%, 70%);
+  margin: -.5px;
+  transition: @r(.5s) ease;
+  clip-path: polygon(@pick(
+    '0 0, 100% 0, 100% 100%',
+    '0 0, 100% 0, 0 100%',
+    '0 0, 100% 100%, 0 100%',
+    '100% 0, 100% 100%, 0 100%'
+  ));
+</css-doodle> -->
+
+<!-- stonly-widget - copy into the head -->
+<script>var STONLY_WID = "853ee9c6-ba1c-11eb-8dbf-062882f67cfe";</script>
+<script>
+!function(s,t,o,n,l,y,w,g){s.StonlyWidget||((w=s.StonlyWidget=function(){
+    w._api?w._api.apply(w,arguments):w.queue.push(arguments)}).queue=[],(y=t.createElement(o)).async=!0,
+    (g=new XMLHttpRequest).open("GET",n+"version?v="+Date.now(),!0),g.onreadystatechange=function(){
+    4===g.readyState&&(y.src=n+"stonly-widget.js?v="+(200===g.status?g.responseText:Date.now()),
+    (l=t.getElementsByTagName(o)[0]).parentNode.insertBefore(y,l))},g.send())
+    }(window,document,"script","https://stonly.com/js/widget/v2/");
+</script>
