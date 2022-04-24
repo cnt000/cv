@@ -147,6 +147,10 @@ body {
   margin: 0.4rem 0;
 }
 
+.md-content summary > p {
+  display: inline;
+}
+
 .md-content a {
   color: var(--theme-accent);
   font-weight: 400;

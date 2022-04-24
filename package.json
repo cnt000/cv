@@ -6,7 +6,9 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "deploy": "yarn build && yarn surge",
+    "surge": "surge dist/ --domain cv2022.surge.sh"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^0.2.0",
