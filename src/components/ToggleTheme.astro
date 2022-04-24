@@ -1,0 +1,16 @@
+---
+---
+<button class="switch-theme w-4 h-4">
+  <i class="fa-solid fa-circle-half-stroke"></i>
+</button>
+
+<script>
+	document.body.querySelector('.switch-theme').addEventListener("click", () => {
+		const html = document.querySelector('html');
+		if (html.classList.contains('dark')) {
+			html.classList.remove('dark');
+		} else {
+			html.classList.add('dark')
+		}
+	});
+</script>

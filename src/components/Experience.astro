@@ -1,0 +1,16 @@
+---
+import ExperienceHeader from './ExperienceHeader.astro';
+import ExperienceContent from './ExperienceContent.astro';
+export interface Props {
+	title: string;
+  company: string;
+	link: string;
+	duration: string;
+  content: string;
+}
+const { title, link, duration, company, content } = Astro.props;
+---
+<section class="my-4">
+  <ExperienceHeader title={title} duration={duration} link={link} company={company} content={content} />
+  <ExperienceContent content={content} />
+</section>

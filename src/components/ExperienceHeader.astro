@@ -1,0 +1,20 @@
+---
+export interface Props {
+	title: string;
+  company: string;
+	link: string;
+	duration: string;
+}
+const { title, link, duration, company } = Astro.props;
+---
+<div class="flex flex-initial bg-indigo-200 p-2 dark:bg-indigo-600">
+  <div class="flex-auto">
+    <div class="text-lg font-bold">{title}<span 
+      class="text-base font-light text-neutral-700 dark:text-neutral-200"> | {company}</span></div>
+    <div class="text-sm inline-block align-middle">
+      <i class="fa-solid fa-building"></i>
+      <a class="text-indigo-800 dark:text-neutral-200" href={link} target="blank">{link}</a>
+    </div>
+  </div>
+  <div class="text-sm font-normal leading-8">{duration}</div>
+</div>

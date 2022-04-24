@@ -1,0 +1,13 @@
+---
+import { Markdown } from 'astro/components';
+
+export interface Props {
+	content: string;
+}
+const { content } = Astro.props;
+---
+<div class="m-2 text-sm md-content">
+  <Markdown>
+    {content}
+  </Markdown>
+<div>

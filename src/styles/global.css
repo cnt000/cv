@@ -1,0 +1,167 @@
+:root {
+  --font-fallback: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  --font-body: 'Roboto', var(--font-fallback);
+
+  --color-white: #fff;
+  --color-black: #000014;
+
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+
+  --color-blue: #3894ff;
+  --color-blue-rgb: 56, 148, 255;
+  --color-green: #17c083;
+  --color-green-rgb: 23, 192, 131;
+  --color-orange: #ff5d01;
+  --color-orange-rgb: 255, 93, 1;
+  --color-purple: #9952e6;
+  --color-purple-rgb: 136, 45, 231;
+  --color-lightpurple: #a5b4fc;
+  --color-lightpurple-rgb: 165, 180, 252;
+  --color-red: #ff1639;
+  --color-red-rgb: 255, 22, 57;
+  --color-yellow: #ffbe2d;
+  --color-yellow-rgb: 255, 190, 45;
+}
+
+:root {
+  color-scheme: light;
+  --theme-accent: var(--color-purple);
+  --theme-accent-rgb: var(--color-purple-rgb);
+  --theme-accent-opacity: 0.1;
+  --theme-divider: var(--color-gray-100);
+  --theme-text: var(--color-gray-800);
+  --theme-text-light: var(--color-gray-600);
+  --theme-text-lighter: var(--color-gray-400);
+  --theme-bg: var(--color-white);
+  --theme-bg-offset: var(--color-gray-100);
+  --theme-bg-accent: rgba(var(--theme-accent-rgb), var(--theme-accent-opacity));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --theme-accent: var(--color-lightpurple);
+    --theme-accent-opacity: 0.3;
+    --theme-divider: var(--color-gray-900);
+    --theme-text: var(--color-gray-200);
+    --theme-text-light: var(--color-gray-400);
+    --theme-text-lighter: var(--color-gray-600);
+    --theme-bg: var(--color-black);
+    --theme-bg-offset: var(--color-gray-900);
+  }
+}
+
+:root.dark {
+  color-scheme: dark;
+  --theme-accent: var(--color-lightpurple);
+  --theme-accent-opacity: 0.3;
+  --theme-divider: var(--color-gray-900);
+  --theme-text: var(--color-gray-200);
+  --theme-text-light: var(--color-gray-400);
+  --theme-text-lighter: var(--color-gray-600);
+  --theme-bg: var(--color-black);
+  --theme-bg-offset: var(--color-gray-900);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+::selection {
+  color: var(--theme-accent);
+  background-color: rgba(var(--theme-accent-rgb), var(--theme-accent-opacity));
+}
+
+:root {
+  --user-font-scale: 1rem - 16px;
+  --max-width: calc(100% - 2rem);
+}
+
+@media (min-width: 50em) {
+  :root {
+    --max-width: 40em;
+  }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--theme-bg);
+  color: var(--theme-text);
+}
+
+.condensed {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.switch-theme > i {
+  transition: transform 0.2s ease-out;
+  transform: rotate(0);
+}
+
+.dark .switch-theme > i {
+  transform: rotate(180deg);
+}
+
+/* .md-content area */
+
+:is(.md-content h1, .md-content h2, .md-content h3) {
+  margin: 0.4rem 0;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.md-content h1 {
+  font-size: 1.3rem;
+}
+
+.md-content h2 {
+  font-size: 1.1rem;
+}
+
+.md-content h3 {
+  font-size: 1rem;
+}
+
+.md-content ul,
+.md-content li {
+  list-style: square;
+  margin-left: 1rem;
+}
+
+.md-content ul {
+  margin: 0.8rem 0;
+}
+
+.md-content p {
+  margin: 0.4rem 0;
+}
+
+.md-content a {
+  color: var(--theme-accent);
+  font-weight: 400;
+  text-underline-offset: 0.08em;
+  text-decoration: none;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.md-content a:hover,
+.md-content a:focus {
+  text-decoration: underline;
+}
+
+.md-content a:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 0.25em;
+}

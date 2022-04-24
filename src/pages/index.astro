@@ -1,0 +1,85 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Cover from '../components/Cover.astro';
+import Skills from '../components/Skills.astro';
+import SectionTitle from '../components/SectionTitle.astro';
+import Experience from '../components/Experience.astro';
+
+const title = 'Edoardo Gargano';
+const description = 'Front-end senior developer';
+const permalink = 'https://example.com/';
+const content = `My daily job is relative to team management, programming, planning, analysis of new functionalities and website performance enhancement, ensuring technical cohesion across the domain teams and acting as the technical domain representative in cross-domain matters.
+
+My team is in charge of the following three luxury e-commerce websites, with focus on the development of new features, integration and refactorization of existing features, measuring and optimizing the website performances:
+
+- [balenciaga.com](https://www.balenciaga.com)
+- [alexandermcqueen.com](https://www.alexandermcqueen.com])
+- [mcq.com](https://www.mcq.com)
+
+## Key responsibilities
+
+- Leading a front-end development team #LEAD
+- Developing in a number of programming languages, with quality #PROGRAMMING
+- Developing testing strategies #TESTING
+- Defining best practices to keep high software performances #PERFORMANCE
+- Designing the evolutions of software products #EVOLUTION
+- Leading planning activities and supporting in predictability #AGILE
+- Defining and steering technical strategy with technical leads and architects#STRATEGY
+- Supporting Project Managers and Product Managers #SUPPORT
+- Team coaching and mentoring through workshops and communities #MENTORING
+
+## Technologies
+
+- HTML5, CSS3, JS
+- React, Vue.js and relative ecosystem
+- NoSQL DB, Relational DB (Oracle, MySQL, Microsoft SQL)
+- C#, RAZOR, MVC framework
+- Website performance optimization
+- Agile`
+
+// const response = await fetch('data.json');
+// const data = await response.json();
+// const { title, body } = data;
+---
+
+<html lang="en">
+	<head>
+		<BaseHead {title} {description} {permalink} />
+	</head>
+
+	<body>
+		<div class="flex flex-col min-h-screen">
+			<Header />
+			<div class="p-4 flex-1">
+				<Cover />
+				<SectionTitle title="Skills">
+					<Skills />
+				</SectionTitle>
+				<SectionTitle title="Work Experience">
+					<Experience title="Full-stack senior developer" duration="07/2020 - 10/2021" link="https://www.monrif.it" company="MONRIF.NET (Bologna)" content={content} />
+					<Experience title="Full-stack senior developer" duration="07/2020 - 10/2021" link="https://www.monrif.it" company="MONRIF.NET (Bologna)" content={content} />
+					<Experience title="Full-stack senior developer" duration="07/2020 - 10/2021" link="https://www.monrif.it" company="MONRIF.NET (Bologna)" content={content} />
+					<Experience title="Full-stack senior developer" duration="07/2020 - 10/2021" link="https://www.monrif.it" company="MONRIF.NET (Bologna)" content={content} />
+				</SectionTitle>
+				<SectionTitle title="Volunteer">
+					<Experience title="Full-stack senior developer" duration="07/2020 - 10/2021" link="https://www.monrif.it" company="MONRIF.NET (Bologna)" content={content} />
+				</SectionTitle>
+				<SectionTitle title="Education">
+					<Experience title="Full-stack senior developer" duration="07/2020 - 10/2021" link="https://www.monrif.it" company="MONRIF.NET (Bologna)" content={content} />
+				</SectionTitle>
+				<SectionTitle title="Languages">
+					<Experience title="Full-stack senior developer" duration="07/2020 - 10/2021" link="https://www.monrif.it" company="MONRIF.NET (Bologna)" content={content} />
+				</SectionTitle>
+				<SectionTitle title="Interests">
+					<Experience title="Full-stack senior developer" duration="07/2020 - 10/2021" link="https://www.monrif.it" company="MONRIF.NET (Bologna)" content={content} />
+				</SectionTitle>
+				<SectionTitle title="References">
+					<Experience title="Full-stack senior developer" duration="07/2020 - 10/2021" link="https://www.monrif.it" company="MONRIF.NET (Bologna)" content={content} />
+				</SectionTitle>
+			</div>
+			<Footer />
+		</div>
+	</body>
+</html>
