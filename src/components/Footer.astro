@@ -1,10 +1,23 @@
 ---
-// Styled by Tailwind :)
+import { footer as data } from "../data/footer.js";
 ---
+
 <footer class="h-24 p-4 condensed text-sm">
-  <ul class="grid grid-cols-2 gap-2 md:grid-cols-3 border-t-2 border-indigo-200 py-4 dark:border-indigo-400">
-    <li><i class="fa-solid fa-user w-4"></i>Edoardo Gargano</li>
-    <li class="text-center text-right md:text-center"><i class="text-center far fa-envelope w-4"></i>edoardo.gargano [at] gmail.com</li>
-    <li class="text-right col-span-2 md:col-auto"><i class="text-center fa-solid fa-mobile-screen-button w-4"></i>+39 329 54 166 26</li>
+  <ul
+    class="grid grid-cols-2 gap-2 md:grid-cols-3 border-t-2 border-indigo-200 py-4 dark:border-indigo-400"
+  >
+    <li>
+      <i class="fa-solid fa-user w-4"></i><span class="pl-1">{data.name}</span>
+    </li>
+    <li class="text-center text-right md:text-center">
+      <i class="text-center far fa-envelope w-4 align-middle"></i><span
+        class="pl-1">{data.mail}</span
+      >
+    </li>
+    <li class="text-right col-span-2 md:col-auto">
+      <i class="text-center fa-solid fa-mobile-screen-button w-4"></i><span
+        class="pl-1">{data.number}</span
+      >
+    </li>
   </ul>
 </footer>

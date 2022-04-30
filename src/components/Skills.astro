@@ -3,5 +3,5 @@ import Skill from './Skill.astro';
 import { skills as data } from '../data/skills.js';
 ---
 <ul class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6">
-  {data.map(({name, level, tags}) => <Skill name={name} level={level} tags={tags} />)}
+  {data.sort((a, b) => +b.level - +a.level).map(({name, level, tags}) => <Skill name={name} level={level} tags={tags} />)}
 </ul>

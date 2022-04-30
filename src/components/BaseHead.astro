@@ -1,14 +1,14 @@
 ---
-import '../styles/global.css';
+import "../styles/global.css";
 
 export interface Props {
-	title: string;
-	description: string;
-	permalink: string;
+  title: string;
+  description: string;
+  permalink: string;
 }
 const { title, description, permalink } = Astro.props;
 // const image = `https://ui-avatars.com/api/?name=${title.replace(' ', '+')}`
-const image = 'https://webauthn.io/dist/images/shield.svg'
+const image = "https://webauthn.io/dist/images/shield.svg";
 ---
 
 <!-- Global Metadata -->
@@ -36,7 +36,11 @@ const image = 'https://webauthn.io/dist/images/shield.svg'
 <meta property="twitter:image" content={image} />
 
 <!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/96b2395f2a.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@300;400;500&display=swap"
+  rel="stylesheet"
+/>
+<script src="https://kit.fontawesome.com/96b2395f2a.js" crossorigin="anonymous"
+></script>

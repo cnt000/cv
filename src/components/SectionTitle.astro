@@ -1,9 +1,21 @@
 ---
 export interface Props {
-	title: string;
+  title: string;
 }
 const { title } = Astro.props;
 ---
+
+<section class="mt-4">
+  <header class="relative">
+    <h2
+      class="text-indigo-900 text-xl condensed bg-white mr-4 z-1 pr-2 inline-block dark:text-indigo-100 dark:bg-black"
+    >
+      {title.toUpperCase()}
+    </h2>
+  </header>
+  <slot />
+</section>
+
 <style>
   header::after {
     position: absolute;
@@ -17,11 +29,3 @@ const { title } = Astro.props;
     display: block;
   }
 </style>
-<section class="mt-4">
-  <header class="relative">
-    <h2 class="text-indigo-900 text-xl condensed bg-white mr-4 z-1 pr-2 inline-block dark:text-indigo-100 dark:bg-black">
-      {title.toUpperCase()}
-    </h2>
-  </header>
-  <slot />
-</section>

@@ -1,14 +1,35 @@
 ---
-  import ToggleTheme from './ToggleTheme.astro'
+import ToggleTheme from "./ToggleTheme.astro";
+import { header as data } from "../data/header.js";
 ---
+
 <header class="p-4">
   <div class="absolute top-4 right-4">
     <ToggleTheme />
   </div>
-  <h1 class="text-4xl condensed">Edoardo Gargano</h1>
-  <h2 class="text-xl condensed pb-2">Front-end senior developer, full-stack developer, JavaScript Lover</h2>
-  <p class="text-sm pt-2 border-t-2 border-indigo-200 dark:border-indigo-400"><i class="fa-solid fa-house-chimney-user w-4"></i> via A. Bergamini 6, 40133, Bologna, Italy</p>
-  <p class="text-sm"><i class="text-center far fa-envelope w-4"></i> edoardo.gargano [at] gmail.com</p>
-  <p class="text-sm"><i class="text-center fa-solid fa-mobile-screen-button w-4"></i> +39 329 54 166 26</p>
-  <p class=""><i class="fa-brands fa-linkedin w-4 text-center"></i> <a class="text-indigo-600 dark:text-indigo-400" href="https://www.linkedin.com/in/egargano" alt="linkedin profile" target="blank">Linkedin</a>  <i class="fa-brands fa-github-square  w-4 text-center"></i> <a class="text-indigo-600 dark:text-indigo-400" href="https://github.com/cnt000" alt="github profile" target="blank">Github</a></p>
+  <h1 class="text-4xl condensed">{data.name}</h1>
+  <h2 class="text-xl condensed pb-2">{data.description}</h2>
+  <p class="text-sm pt-2 border-t-2 border-indigo-200 dark:border-indigo-400">
+    <i class="fa-solid fa-house-chimney-user w-4"></i>
+    {data.address}
+  </p>
+  <p class="text-sm">
+    <i class="text-center far fa-envelope w-4"></i>
+    {data.mail}
+  </p>
+  <p class="text-sm">
+    <i class="text-center fa-solid fa-mobile-screen-button w-4"></i>
+    {data.number}
+  </p>
+  <p>
+  {data?.socials?.map(social => 
+    <span class="pr-4">
+      <i class={`fa-brands ${social.icon} w-4 text-center`}></i>
+      <a
+        class="text-indigo-600 dark:text-indigo-400"
+        href={social.link}
+        target="blank">{social.name}</a>
+    </span>
+  )}
+  </p>
 </header>

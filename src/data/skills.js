@@ -1,22 +1,47 @@
 export const skills = [
   {
-    name: 'Prima skill',
-    level: '90',
-    tags: ['html/html5', 'scss/css', 'javascript analysis'],
+    name: "Front-end",
+    level: "100",
+    tags: [
+      "html/html5",
+      "scss/css",
+      "javascript",
+      "typescript"
+    ],
   },
   {
-    name: 'Seconda skill',
-    level: '80',
-    tags: ['html/html5', 'scss/css', 'javascript analysis'],
+    name: "Back-end",
+    level: "80",
+    tags: ["api", "database", "graphQL"],
   },
   {
-    name: 'Terza skill',
-    level: '70',
-    tags: ['html/html5', 'scss/css', 'javascript analysis'],
+    name: "Software Engineering",
+    level: "90",
+    tags: ["design pattern", "clean coding", "refactoring"],
   },
   {
-    name: 'Quarta skill',
-    level: '80',
-    tags: ['html/html5', 'scss/css', 'javascript analysis'],
+    name: "Database",
+    level: "90",
+    tags: ["nosql", "relational", "in memory"],
+  },
+  {
+    name: "Web performance",
+    level: "100",
+    tags: ["image optimization", "PWA", "code splitting", "lazy loading"],
+  },
+  {
+    name: "Testing",
+    level: "90",
+    tags: ["unit", "integration", "end to end"],
+  },
+  {
+    name: "Agile",
+    level: "100",
+    tags: ["scrum", "kanban", "safe", "cerimonies"],
+  },
+  {
+    name: "Leadership",
+    level: "90",
+    tags: ["teamwork", "mentoring", "cross-team communication"],
   },
 ];

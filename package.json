@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev --port 3001",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
@@ -15,6 +15,7 @@
     "astro": "^1.0.0-beta.17",
     "autoprefixer": "^10.4.4",
     "postcss": "^8.4.12",
+    "prettier-plugin-astro": "^0.0.12",
     "tailwindcss": "^3.0.24"
   },
   "volta": {
