@@ -77,7 +77,7 @@ My team is in charge of the following three luxury e-commerce websites, with foc
 
 - [balenciaga.com](https://www.balenciaga.com)
 
-- [alexandermcqueen.com](https://www.alexandermcqueen.com])
+- [alexandermcqueen.com](https://www.alexandermcqueen.com)
 
 - [mcq.com](https://www.mcq.com)
 
