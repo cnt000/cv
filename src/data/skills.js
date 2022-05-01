@@ -2,12 +2,7 @@ export const skills = [
   {
     name: "Front-end",
     level: "100",
-    tags: [
-      "html/html5",
-      "scss/css",
-      "javascript",
-      "typescript"
-    ],
+    tags: ["html/html5", "scss/css", "javascript", "typescript"],
   },
   {
     name: "Back-end",

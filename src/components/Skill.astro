@@ -1,28 +1,26 @@
 ---
-export interface Props {
-	name: string;
-	level: string;
-	tags: Array<string>;
-}
-
-const { name, level, tags } = Astro.props;
+const { name, level, tags = [] } = Astro.props;
 const levels = {
-	'Master': 100,
-	'Advanced': 90,
-	'Fluent': 80,
-	'Medium': 70
-}
-const levelToName = (level) => Object.keys(levels)[Object.values(levels).indexOf(level)]
-const levelName = levelToName(+level)
+  Master: 100,
+  Advanced: 90,
+  Fluent: 80,
+  Medium: 70,
+  Basic: 60,
+};
+const levelToName = (level) =>
+  Object.keys(levels)[Object.values(levels).indexOf(level)];
+const levelName = levelToName(+level);
 ---
+
 <li class="bg-indigo-400 my-2 p-2">
   <h3 class="text-lg text-white">{name}</h3>
-	<div class="text-sm mt-2 text-indigo-900">{levelName}</div>
-	<div class="w-11/12 bg-white h-2 border border-indigo-900 box-border overflow-hidden mb-4">
-		<div class="bg-green-600 h-2" style={`width: ${level}%`}>
-		</div>
-	</div>
-	<ul>
-		{tags.map(tag => <li class="bg-indigo-300 p-1 my-1 mr-2 inline-block text-xs text-indigo-900"><span>{tag}</span></li>)}
-	</ul>
+  <div class="text-sm mt-2 text-indigo-900">{levelName}</div>
+  <div
+    class="w-11/12 bg-white h-2 border border-indigo-900 box-border overflow-hidden mb-4"
+  >
+    <div class="bg-green-600 h-2" style={`width: ${level}%`}></div>
+  </div>
+  <ul>
+    {tags.map(tag => <li class="bg-indigo-300 p-1 my-1 mr-2 inline-block text-xs text-indigo-900"><span>{tag}</span></li>)}
+  </ul>
 </li>

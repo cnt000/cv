@@ -8,7 +8,6 @@ export const contents = [
         link: "https://www.paramount.com",
         company: "Paramount (Full-remote)",
         text: `TODO`,
-
       },
       {
         title: "Full-stack developer",
@@ -66,7 +65,6 @@ Websites:
 - Strapi, Ghost, Stripe, Sanity, Gatsby, Next.js
 
 - Git, Agile, Bash, AWS, Google Cloud`,
-
       },
       {
         title: "Tech lead - front-end team",

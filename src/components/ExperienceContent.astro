@@ -1,11 +1,12 @@
 ---
-import { Markdown } from 'astro/components';
+import { Markdown } from "astro/components";
 
 export interface Props {
-	content: string;
+  content: string;
 }
 const { content } = Astro.props;
 ---
+
 <div class="m-2 text-sm md-content">
   <Markdown>
     {content}
