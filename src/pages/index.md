@@ -9,6 +9,7 @@ setup: |
   import { contents as data } from "../data/contents.js";
 title: Edoardo Gargano
 description: Senior front-end developer, full-stack developer, tech lead, JavaScript lover and Bologna JS Community Organizer with more than 10 years of experience in multinational companies
+permalink: https://cnt000.github.io/cv/
 ---
 
 <Cover />
