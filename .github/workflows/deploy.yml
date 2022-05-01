@@ -19,6 +19,7 @@ jobs:
         run: yarn build
         env:
           HTTPS: 'true'
+          PUBLIC_URL: ${{ secrets.PUBLIC_URL }}
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
