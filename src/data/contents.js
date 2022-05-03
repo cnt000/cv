@@ -67,7 +67,7 @@ Websites:
 - Git, Agile, Bash, AWS, Google Cloud`,
       },
       {
-        title: "Tech lead - front-end team",
+        title: "Tech lead - frontend team",
         duration: "03/2013 - 06/2020",
         link: "https://www.ynap.com",
         company: "YOOX NET-A-PORTER (Bologna)",
@@ -84,7 +84,7 @@ My team is in charge of the following three luxury e-commerce websites, with foc
 
 ## Key responsibilities
 
-- Leading a front-end development team #LEAD
+- Leading a frontend development team #LEAD
 
 - Developing in a number of programming languages, with quality #PROGRAMMING
 
@@ -117,7 +117,7 @@ My team is in charge of the following three luxury e-commerce websites, with foc
 - Agile`,
       },
       {
-        title: "Front-end Developer (Consultant)",
+        title: "Frontend Developer (Consultant)",
         duration: "04/2011 - 03/2013",
         link: "https://www.ynap.com",
         company: "YOOX NET-A-PORTER (Bologna)",
@@ -126,7 +126,7 @@ My team is in charge of the following three luxury e-commerce websites, with foc
 ## Key responsibilities
 
 - Restyling of existing websites and adding new features and functionalities
-- Front-End optimization (pixel perfection from layouts,…) and mapping and skinning functionalities from backend side
+- Frontend optimization (pixel perfection from layouts,…) and mapping and skinning functionalities from backend side
 - Bug fixing
 - Web performance optimization
 
@@ -159,7 +159,7 @@ My team is in charge of the following three luxury e-commerce websites, with foc
         company: "Bologna JavaScript Community/Meetup",
         text: `Organiser Bologna JavaScript Community/Meetup
 BolognaJS is a community for JavaScript developers in Bologna. We made workshops, talks, networking meetings, we believe in sharing knowledge and we study new technologies on JavaScript ecosystem. I love to meet people and to speak about Programming feature, technique and do something together.
-        
+
 See our last meetup on: https://www.meetup.com/Bologna-JS-Meetup/`,
       },
     ],

@@ -1,6 +1,6 @@
 export const skills = [
   {
-    name: "Front-end",
+    name: "Frontend",
     level: "100",
     tags: ["html/html5", "scss/css", "javascript", "typescript"],
   },
