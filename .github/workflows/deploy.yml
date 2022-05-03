@@ -1,8 +1,7 @@
 name: Deploy
 
 on:
-  branches:
-    - "cv2022"
+  push:
 
 jobs:
   deploy:
